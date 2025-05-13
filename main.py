@@ -14,7 +14,7 @@ def main():
 
     while True:
         rgb = capture_rgb_frame(rgb_cam)
-        depth = capture_depth_frame(depth_cam)
+        depth, _ = capture_depth_frame(depth_cam)
         boxes = detector.detect(rgb)
 
         pointcloud = depth_to_pointcloud(depth, intrinsics)

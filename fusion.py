@@ -13,7 +13,9 @@ def depth_to_pointcloud(depth_map, K, scale=1000.0):
     return np.stack((x, y, z), axis=-1)  # shape: (H, W, 3)
 
 def extract_3d_region_from_bbox(pointcloud, bbox):
-    x1, y1, x2, y2 = map(int, bbox)
+    # Ensure bbox is a flat list
+    bbox = np.array(bbox).flatten()
+    x1, y1, x2, y2 = map(int, bbox[:4])
     region = pointcloud[y1:y2, x1:x2, :]
     valid = region[..., 2] > 0
     return region[valid]
