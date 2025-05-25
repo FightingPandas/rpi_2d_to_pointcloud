@@ -2,25 +2,13 @@ import cv2
 import numpy as np
 import time
 from camera_rgb import open_rgb_camera, capture_rgb_frame
-from camera_depth import open_depth_camera, capture_depth_frame, get_intrinsics, depth_to_pointcloud
-import open3d as o3d
+from camera_depth import open_depth_camera, capture_depth_frame, get_intrinsics
 from performance_logger import PerformanceLogger  # Import logger
-
-def save_pointcloud_ply(points, filename="pointcloud.ply"):
-    if not np.all(np.isfinite(points)):
-        print("⚠️ Point cloud contains invalid values, skipping save.")
-        return
-    if points.shape[0] == 0:
-        print("⚠️ Point cloud is empty, skipping save.")
-        return
-
-    pcd = o3d.geometry.PointCloud()
-    pcd.points = o3d.utility.Vector3dVector(points)
-    o3d.io.write_point_cloud(filename, pcd)
-    print(f"✅ Saved point cloud to {filename}")
+from rgb_depth_fusion import fuse_rgb_with_pointcloud, save_colored_pointcloud_ply
+import open3d as o3d  # Still used for display fallback
 
 def main():
-    logger = PerformanceLogger("main_baseline_log.csv")  # Initialize logger
+    logger = PerformanceLogger("main_baseline_log.csv")
 
     print("Initializing cameras...")
     depth_cam = open_depth_camera()
@@ -34,6 +22,8 @@ def main():
     while True:
         t0 = time.time()
         rgb_frame = capture_rgb_frame(rgb_cam)
+        if rgb_frame.shape[-1] > 3:
+            rgb_frame = rgb_frame[..., :3]
         t1 = time.time()
 
         frame = depth_cam.requestFrame(2000)
@@ -43,20 +33,23 @@ def main():
         depth_frame = frame.depth_data
         t2 = time.time()
 
+        # Resize depth to match RGB resolution
         depth_resized = cv2.resize(depth_frame, (rgb_frame.shape[1], rgb_frame.shape[0]), interpolation=cv2.INTER_NEAREST)
         t3 = time.time()
 
-        # Generate and save point cloud every N frames
+        # Generate and save RGB-D fused point cloud every N frames
         if frame_count % 50 == 0:
-            pointcloud = depth_to_pointcloud(depth_resized, K)
-            print(f"Generated point cloud with {pointcloud.shape[0]} points.")
-            save_pointcloud_ply(pointcloud, filename=f"pointcloud_{frame_count}.ply")
+            print("Depth shape:", depth_resized.shape)
+            print("RGB shape:", rgb_frame.shape)
+            fused_cloud = fuse_rgb_with_pointcloud(depth_resized, rgb_frame, K)
+            print(f"Generated RGB-D point cloud with {fused_cloud.shape[0]} points.")
+            save_colored_pointcloud_ply(fused_cloud, filename=f"fused_pointcloud_{frame_count}.ply")
 
-        # Create depth heatmap
+        # Create a depth heatmap for display
         depth_norm = cv2.normalize(depth_resized, None, 0, 255, cv2.NORM_MINMAX)
         depth_colored = cv2.applyColorMap(depth_norm.astype(np.uint8), cv2.COLORMAP_JET)
 
-        # Overlay side by side
+        # Side-by-side display
         display = np.hstack((rgb_frame[:, :, :3], depth_colored))
 
         # FPS overlay
@@ -78,7 +71,7 @@ def main():
         frame_count += 1
 
     print("Stopping cameras...")
-    logger.close()  # Close logger
+    logger.close()
     cv2.destroyAllWindows()
     depth_cam.stop()
     depth_cam.close()

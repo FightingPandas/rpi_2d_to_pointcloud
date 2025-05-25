@@ -51,6 +51,7 @@ def depth_to_pointcloud(depth_map, K, scale=1000.0):
     valid = np.isfinite(points[:, 2]) & (points[:, 2] > 0)
     return points[valid]
 
+
 def save_pointcloud_ply(points, filename="pointcloud.ply"):
     pcd = o3d.geometry.PointCloud()
     pcd.points = o3d.utility.Vector3dVector(points)
