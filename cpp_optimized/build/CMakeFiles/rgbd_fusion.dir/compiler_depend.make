@@ -647,7 +647,13 @@ CMakeFiles/rgbd_fusion.dir/src/main.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_o
   /usr/include/Semaphore.hpp \
   /usr/include/c++/12/condition_variable \
   /usr/include/ArducamTOFSensor.hpp \
-  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/camera_rgb.hpp \
+  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/thread_pipeline.hpp \
+  /usr/include/c++/12/queue \
+  /usr/include/c++/12/deque \
+  /usr/include/c++/12/bits/stl_deque.h \
+  /usr/include/c++/12/bits/deque.tcc \
+  /usr/include/c++/12/bits/stl_queue.h \
+  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/rgb_reader.hpp \
   /usr/include/opencv4/opencv2/opencv.hpp \
   /usr/include/opencv4/opencv2/calib3d.hpp \
   /usr/include/opencv4/opencv2/features2d.hpp \
@@ -742,11 +748,6 @@ CMakeFiles/rgbd_fusion.dir/src/main.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_o
   /usr/include/c++/12/bits/stl_list.h \
   /usr/include/c++/12/bits/list.tcc \
   /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
-  /usr/include/c++/12/queue \
-  /usr/include/c++/12/deque \
-  /usr/include/c++/12/bits/stl_deque.h \
-  /usr/include/c++/12/bits/deque.tcc \
-  /usr/include/c++/12/bits/stl_queue.h \
   /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
   /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
   /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
@@ -755,7 +756,81 @@ CMakeFiles/rgbd_fusion.dir/src/main.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_o
   /usr/include/opencv4/opencv2/video.hpp \
   /usr/include/opencv4/opencv2/video/tracking.hpp \
   /usr/include/opencv4/opencv2/video/background_segm.hpp \
-  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/thread_pipeline.hpp
+  /usr/include/fcntl.h \
+  /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/aarch64-linux-gnu/bits/stat.h \
+  /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+  /usr/include/aarch64-linux-gnu/sys/mman.h \
+  /usr/include/aarch64-linux-gnu/bits/mman.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
+  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
+  /usr/include/unistd.h \
+  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+  /usr/include/aarch64-linux-gnu/bits/environments.h \
+  /usr/include/aarch64-linux-gnu/bits/confname.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h
+
+CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/performance_logger.cpp \
+  /usr/include/stdc-predef.h \
+  /usr/include/c++/12/chrono \
+  /usr/include/c++/12/bits/chrono.h \
+  /usr/include/c++/12/ratio \
+  /usr/include/c++/12/type_traits \
+  /usr/include/aarch64-linux-gnu/c++/12/bits/c++config.h \
+  /usr/include/aarch64-linux-gnu/c++/12/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/features-time64.h \
+  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
+  /usr/include/aarch64-linux-gnu/bits/timesize.h \
+  /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+  /usr/include/aarch64-linux-gnu/bits/long-double.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs.h \
+  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
+  /usr/include/aarch64-linux-gnu/c++/12/bits/cpu_defines.h \
+  /usr/include/c++/12/pstl/pstl_config.h \
+  /usr/include/c++/12/cstdint \
+  /usr/lib/gcc/aarch64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/aarch64-linux-gnu/bits/types.h \
+  /usr/include/aarch64-linux-gnu/bits/typesizes.h \
+  /usr/include/aarch64-linux-gnu/bits/time64.h \
+  /usr/include/aarch64-linux-gnu/bits/wchar.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/12/limits \
+  /usr/include/c++/12/ctime \
+  /usr/include/time.h \
+  /usr/lib/gcc/aarch64-linux-gnu/12/include/stddef.h \
+  /usr/include/aarch64-linux-gnu/bits/time.h \
+  /usr/include/aarch64-linux-gnu/bits/timex.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/aarch64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/time_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/aarch64-linux-gnu/bits/endian.h \
+  /usr/include/aarch64-linux-gnu/bits/endianness.h \
+  /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/aarch64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/aarch64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/12/bits/parse_numbers.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/cpp_type_traits.h \
+  /usr/include/c++/12/ext/type_traits.h \
+  /usr/include/aarch64-linux-gnu/sys/resource.h \
+  /usr/include/aarch64-linux-gnu/bits/resource.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_rusage.h
 
 CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/ply_writer.cpp \
   /usr/include/stdc-predef.h \
@@ -1716,7 +1791,9 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
   /usr/include/ArducamTOFData.hpp \
   /usr/include/Semaphore.hpp \
   /usr/include/ArducamTOFSensor.hpp \
-  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/camera_rgb.hpp \
+  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/rgb_depth_fusion.hpp \
+  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/ply_writer.hpp \
+  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/rgb_reader.hpp \
   /usr/include/opencv4/opencv2/opencv.hpp \
   /usr/include/opencv4/opencv2/calib3d.hpp \
   /usr/include/opencv4/opencv2/features2d.hpp \
@@ -1819,9 +1896,35 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
   /usr/include/opencv4/opencv2/video.hpp \
   /usr/include/opencv4/opencv2/video/tracking.hpp \
   /usr/include/opencv4/opencv2/video/background_segm.hpp \
-  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/rgb_depth_fusion.hpp \
-  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/ply_writer.hpp
+  /usr/include/fcntl.h \
+  /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+  /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/aarch64-linux-gnu/bits/stat.h \
+  /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+  /usr/include/aarch64-linux-gnu/sys/mman.h \
+  /usr/include/aarch64-linux-gnu/bits/mman.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
+  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
+  /usr/include/unistd.h \
+  /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+  /usr/include/aarch64-linux-gnu/bits/environments.h \
+  /usr/include/aarch64-linux-gnu/bits/confname.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/performance_logger.hpp \
+  /usr/include/c++/12/fstream \
+  /usr/include/aarch64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/aarch64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
+
+/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/performance_logger.hpp:
 
 /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/rgb_depth_fusion.cpp:
 
@@ -1833,13 +1936,31 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/ply_writer.cpp:
 
+/usr/include/aarch64-linux-gnu/sys/resource.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/aarch64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/aarch64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/unistd.h:
+
+/usr/include/aarch64-linux-gnu/bits/mman_ext.h:
+
+/usr/include/aarch64-linux-gnu/bits/mman-linux.h:
+
+/usr/include/aarch64-linux-gnu/sys/mman.h:
+
+/usr/include/aarch64-linux-gnu/bits/struct_stat.h:
+
+/usr/include/aarch64-linux-gnu/bits/stat.h:
+
+/usr/include/fcntl.h:
+
 /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
-
-/usr/include/c++/12/bits/stl_queue.h:
-
-/usr/include/c++/12/bits/stl_deque.h:
-
-/usr/include/c++/12/queue:
 
 /usr/include/c++/12/bits/list.tcc:
 
@@ -1850,6 +1971,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
 
 /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/mman.h:
 
 /usr/include/opencv4/opencv2/core/cuda_types.hpp:
 
@@ -1880,6 +2003,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/opencv4/opencv2/flann/lsh_index.h:
 
 /usr/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/include/aarch64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/opencv4/opencv2/flann/logger.h:
 
@@ -1941,11 +2066,21 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /usr/include/opencv4/opencv2/opencv.hpp:
 
+/usr/include/c++/12/bits/stl_queue.h:
+
+/usr/include/c++/12/bits/stl_deque.h:
+
+/usr/include/c++/12/queue:
+
+/usr/include/aarch64-linux-gnu/bits/fcntl.h:
+
 /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/main.cpp:
 
 /usr/include/c++/12/iostream:
 
 /usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/ArducamTOFSensor.hpp:
 
@@ -1970,6 +2105,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/include/c++/12/bits/parse_numbers.h:
+
+/usr/include/aarch64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/include/c++/12/ctime:
 
@@ -2017,6 +2154,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /usr/include/aarch64-linux-gnu/c++/12/bits/ctype_inline.h:
 
+/usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h:
+
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
 /usr/include/aarch64-linux-gnu/c++/12/bits/ctype_base.h:
@@ -2053,6 +2192,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /usr/include/opencv4/opencv2/core/persistence.hpp:
 
+/usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h:
+
 /usr/include/opencv4/opencv2/core/mat.inl.hpp:
 
 /usr/include/opencv4/opencv2/core/bufferpool.hpp:
@@ -2074,6 +2215,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/c++/12/bits/std_abs.h:
 
 /usr/include/c++/12/debug/assertions.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_rusage.h:
 
 /usr/include/alloca.h:
 
@@ -2207,6 +2350,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /usr/include/aarch64-linux-gnu/bits/endianness.h:
 
+/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/rgb_reader.hpp:
+
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/12/bits/vector.tcc:
@@ -2230,6 +2375,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/time.h:
+
+/usr/include/aarch64-linux-gnu/bits/mman-shared.h:
 
 /usr/include/c++/12/cstdint:
 
@@ -2383,6 +2530,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /usr/include/aarch64-linux-gnu/c++/12/bits/atomic_word.h:
 
+/usr/include/aarch64-linux-gnu/bits/resource.h:
+
 /usr/include/c++/12/limits:
 
 /usr/include/c++/12/bits/hash_bytes.h:
@@ -2428,6 +2577,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/opencv4/opencv2/core/base.hpp:
 
 /usr/include/c++/12/bits/stl_iterator_base_types.h:
+
+/usr/include/aarch64-linux-gnu/bits/environments.h:
 
 /usr/include/opencv4/opencv2/core/fast_math.hpp:
 
@@ -2515,8 +2666,6 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_FILE.h:
 
-/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/camera_rgb.hpp:
-
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/errno.h:
@@ -2568,6 +2717,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/opencv4/opencv2/objdetect/face.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
+
+/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/performance_logger.cpp:
 
 /usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
 
@@ -2662,6 +2813,8 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_point
 /usr/include/aarch64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/12/exception:
+
+/usr/include/aarch64-linux-gnu/bits/confname.h:
 
 /usr/include/c++/12/bits/allocated_ptr.h:
 

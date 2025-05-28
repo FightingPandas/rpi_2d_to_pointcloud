@@ -15,6 +15,7 @@ find_package(OpenCV REQUIRED)
 # Main executable: C++ fusion pipeline
 add_executable(rgbd_fusion
     src/main.cpp
+    src/performance_logger.cpp
     src/camera_depth.cpp
     src/ply_writer.cpp
     src/rgb_depth_fusion.cpp

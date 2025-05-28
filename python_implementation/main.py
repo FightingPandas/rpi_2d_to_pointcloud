@@ -60,7 +60,7 @@ def main():
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
 
         # Log performance
-        logger.log(frame_count, fps, t1 - t0, t2 - t1, t3 - t2)
+        # logger.log(frame_count, fps, t1 - t0, t2 - t1, t3 - t2)
 
         cv2.imshow("RGB | Depth Heatmap", display)
 

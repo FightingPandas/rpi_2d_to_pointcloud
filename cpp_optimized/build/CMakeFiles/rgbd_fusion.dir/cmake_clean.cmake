@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o.d"
   "CMakeFiles/rgbd_fusion.dir/src/main.cpp.o"
   "CMakeFiles/rgbd_fusion.dir/src/main.cpp.o.d"
+  "CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o"
+  "CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o.d"
   "CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o"
   "CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o.d"
   "CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o"

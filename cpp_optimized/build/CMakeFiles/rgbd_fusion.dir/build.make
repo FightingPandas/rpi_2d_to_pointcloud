@@ -83,10 +83,24 @@ CMakeFiles/rgbd_fusion.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd_fusion.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/main.cpp -o CMakeFiles/rgbd_fusion.dir/src/main.cpp.s
 
+CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o: CMakeFiles/rgbd_fusion.dir/flags.make
+CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/performance_logger.cpp
+CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o: CMakeFiles/rgbd_fusion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o -MF CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o.d -o CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o -c /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/performance_logger.cpp
+
+CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/performance_logger.cpp > CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.i
+
+CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/performance_logger.cpp -o CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.s
+
 CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o: CMakeFiles/rgbd_fusion.dir/flags.make
 CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/camera_depth.cpp
 CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o: CMakeFiles/rgbd_fusion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o -MF CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o.d -o CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o -c /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/camera_depth.cpp
 
 CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.s: cmake_force
 CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o: CMakeFiles/rgbd_fusion.dir/flags.make
 CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/ply_writer.cpp
 CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o: CMakeFiles/rgbd_fusion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o -MF CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o.d -o CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o -c /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/ply_writer.cpp
 
 CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.s: cmake_force
 CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o: CMakeFiles/rgbd_fusion.dir/flags.make
 CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/rgb_depth_fusion.cpp
 CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o: CMakeFiles/rgbd_fusion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o -MF CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o.d -o CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o -c /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/rgb_depth_fusion.cpp
 
 CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.s: cmake_force
 CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: CMakeFiles/rgbd_fusion.dir/flags.make
 CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/thread_pipeline.cpp
 CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: CMakeFiles/rgbd_fusion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o -MF CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o.d -o CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o -c /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/src/thread_pipeline.cpp
 
 CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.i: cmake_force
@@ -142,6 +156,7 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.s: cmake_force
 # Object files for target rgbd_fusion
 rgbd_fusion_OBJECTS = \
 "CMakeFiles/rgbd_fusion.dir/src/main.cpp.o" \
+"CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o" \
 "CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o" \
 "CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o" \
 "CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o" \
@@ -151,6 +166,7 @@ rgbd_fusion_OBJECTS = \
 rgbd_fusion_EXTERNAL_OBJECTS =
 
 rgbd_fusion: CMakeFiles/rgbd_fusion.dir/src/main.cpp.o
+rgbd_fusion: CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o
 rgbd_fusion: CMakeFiles/rgbd_fusion.dir/src/camera_depth.cpp.o
 rgbd_fusion: CMakeFiles/rgbd_fusion.dir/src/ply_writer.cpp.o
 rgbd_fusion: CMakeFiles/rgbd_fusion.dir/src/rgb_depth_fusion.cpp.o
@@ -212,7 +228,7 @@ rgbd_fusion: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.4.6.0
 rgbd_fusion: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.6.0
 rgbd_fusion: /usr/lib/aarch64-linux-gnu/libopencv_core.so.4.6.0
 rgbd_fusion: CMakeFiles/rgbd_fusion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable rgbd_fusion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kysh/rpi_2d_to_pointcloud/cpp_optimized/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rgbd_fusion"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd_fusion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

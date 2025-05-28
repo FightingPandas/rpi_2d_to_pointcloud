@@ -177,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_fusion.dir/build.make CMakeFiles/rgbd_fusion.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/performance_logger.o: src/performance_logger.cpp.o
+.PHONY : src/performance_logger.o
+
+# target to build an object file
+src/performance_logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_fusion.dir/build.make CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.o
+.PHONY : src/performance_logger.cpp.o
+
+src/performance_logger.i: src/performance_logger.cpp.i
+.PHONY : src/performance_logger.i
+
+# target to preprocess a source file
+src/performance_logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_fusion.dir/build.make CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.i
+.PHONY : src/performance_logger.cpp.i
+
+src/performance_logger.s: src/performance_logger.cpp.s
+.PHONY : src/performance_logger.s
+
+# target to generate assembly for a file
+src/performance_logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rgbd_fusion.dir/build.make CMakeFiles/rgbd_fusion.dir/src/performance_logger.cpp.s
+.PHONY : src/performance_logger.cpp.s
+
 src/ply_writer.o: src/ply_writer.cpp.o
 .PHONY : src/ply_writer.o
 
@@ -264,6 +288,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/performance_logger.o"
+	@echo "... src/performance_logger.i"
+	@echo "... src/performance_logger.s"
 	@echo "... src/ply_writer.o"
 	@echo "... src/ply_writer.i"
 	@echo "... src/ply_writer.s"

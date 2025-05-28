@@ -377,4 +377,9 @@ CMakeFiles/rgbd_fusion.dir/src/thread_pipeline.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
  /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/linux/close_range.h \
+ /home/kysh/rpi_2d_to_pointcloud/cpp_optimized/include/performance_logger.hpp \
+ /usr/include/c++/12/fstream \
+ /usr/include/aarch64-linux-gnu/c++/12/bits/basic_file.h \
+ /usr/include/aarch64-linux-gnu/c++/12/bits/c++io.h \
+ /usr/include/c++/12/bits/fstream.tcc
