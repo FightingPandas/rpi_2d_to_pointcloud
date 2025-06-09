@@ -41,4 +41,4 @@ def save_colored_pointcloud_ply(points_rgb, filename="pointcloud_rgb.ply"):
     pcd.points = o3d.utility.Vector3dVector(points_rgb[:, :3])
     pcd.colors = o3d.utility.Vector3dVector(points_rgb[:, 3:])
     o3d.io.write_point_cloud(filename, pcd)
-    print(f"✅ Saved RGB-D point cloud to {filename}")
+    print(f"Saved RGB-D point cloud to {filename}")
