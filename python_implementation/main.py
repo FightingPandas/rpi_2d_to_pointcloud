@@ -28,7 +28,7 @@ def main():
 
         frame = depth_cam.requestFrame(2000)
         if frame is None:
-            print("⚠️ Depth frame failed, skipping...")
+            print("Depth frame failed, skipping...")
             continue
         depth_frame = frame.depth_data
         t2 = time.time()
