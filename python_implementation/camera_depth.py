@@ -23,7 +23,7 @@ def capture_depth_frame(cam, retries=10):
         frame = cam.requestFrame(2000)
         if frame is not None:
             return frame.depth_data, frame.confidence_data
-        print(f"⚠️ Retry {attempt + 1}: Failed to capture depth frame")
+        print(f"Retry {attempt + 1}: Failed to capture depth frame")
     raise RuntimeError("Failed to capture frame from depth camera after retries")
 
 def get_intrinsics(cam):
@@ -56,7 +56,7 @@ def save_pointcloud_ply(points, filename="pointcloud.ply"):
     pcd = o3d.geometry.PointCloud()
     pcd.points = o3d.utility.Vector3dVector(points)
     o3d.io.write_point_cloud(filename, pcd)
-    print(f"✅ Saved point cloud to {filename}")
+    print(f"Saved point cloud to {filename}")
 
 if __name__ == "__main__":
     cam = open_depth_camera()
