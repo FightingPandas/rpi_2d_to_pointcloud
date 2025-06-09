@@ -3,8 +3,7 @@
 #include "rgb_depth_fusion.hpp"
 #include "ply_writer.hpp"
 #include "rgb_reader.hpp"
-#include "performance_logger.hpp"  // ✅ NEW
-
+#include "performance_logger.hpp" 
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <queue>
@@ -22,7 +21,7 @@ static std::atomic<bool> running{false};
 static std::thread depth_thread;
 static std::thread fusion_thread;
 
-static PerformanceLogger logger("cpp_fusion_log.csv");  // ✅ NEW
+static PerformanceLogger logger("cpp_fusion_log.csv");  
 
 void depthCaptureLoop(DepthCamera& cam) {
     while (running) {
@@ -58,7 +57,7 @@ void fusionLoop(const cv::Mat K) {
         // RGB CAPTURE
         cv::Mat rgb = read_rgb_from_shared_memory("psm_1cba8df0", 640, 480);
         if (rgb.empty()) {
-            std::cerr << "⚠️ Failed to read RGB from shared memory.\n";
+            std::cerr << "Failed to read RGB from shared memory.\n";
             continue;
         }
         auto t2 = std::chrono::steady_clock::now();
@@ -114,7 +113,7 @@ void stop() {
     running = false;
     if (depth_thread.joinable()) depth_thread.join();
     if (fusion_thread.joinable()) fusion_thread.join();
-    logger.close();  // ✅ NEW
+    logger.close();
 }
 
 }  // namespace Pipeline
