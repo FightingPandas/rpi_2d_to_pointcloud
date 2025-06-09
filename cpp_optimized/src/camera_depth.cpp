@@ -10,7 +10,7 @@ DepthCamera::DepthCamera() : opened_(false) {}
 
 bool DepthCamera::open() {
     if (cam_.open(Arducam::Connection::CSI, 8) != 0) {
-        std::cerr << "❌ Failed to open Arducam Depth Camera.\n";
+        std::cerr << "Failed to open Arducam Depth Camera.\n";
         return false;
     }
     cam_.setControl(Arducam::Control::RANGE, MAX_DISTANCE);
